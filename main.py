@@ -55,7 +55,7 @@ def main():
     plt.title('Elbow Method For Optimal k')
     plt.show()
     
-    # You can choose which scoring method you'd like to use here: Silhouette
+    # You can choose which scoring method you'd like to use here: Silhouette (explained below)
     
     
     # Plot your data using plot_3d_clusters in visualization.py
@@ -76,6 +76,17 @@ def main():
     
     Reasoning: 3 is the elbow point. Reduction in inertia slows after k=3
     
+    Silhouette score explanation:
+
+    The Silhouette Score is a measure of how well-separated the clusters are in a K-means clustering model. It evaluates two key factors:
+    
+    Cohesion: How close the points in a cluster are to each other.
+    Separation: How distinct a cluster is from other clusters. 
+
+    A higher silhouette score (close to +1) indicates well-separated and cohesive clusters, while a score close to 0 suggests overlapping clusters, and negative scores indicate poor clustering.
+
+    It provides an intuitive and quantitative way to assess clustering quality without needing ground truth labels.
+    It helps select the optimal number of clusters by comparing scores across different values of K.
     
     
     
