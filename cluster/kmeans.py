@@ -70,6 +70,7 @@ class KMeans():
                 new_centroids.append(new_centroid)
             new_centroids = np.array(new_centroids)
             error = np.sum((matrix - new_centroids[closest_centroids])**2)
+            #error = np.sum((matrix - self.centroid[closest_centroids])**2)
             if abs(self.error - error) < self.tol:
                 self.error=error
                 break

@@ -72,19 +72,19 @@ def main():
     # Provide a reasoning based on what you have done above: 
     
     """
-    How many species of flowers are there: 3
+    How many species of flowers are there: 
+    3
     
-    Reasoning: 3 is the elbow point. Reduction in inertia slows after k=3
-    
-    Silhouette score explanation:
+    Reasoning: 
+    3 is the elbow point. Reduction in inertia slows after k=3
+    Based on the Elbow Method and Silhouette Scores, we are attempting to find the optimal number of clusters (K) that minimizes inertia and maximizes the silhouette score.
+    The Elbow Method will show us where the inertia begins to level off, indicating the point where adding more clusters does not improve the fit significantly.
 
+    Silhouette score explanation:
     The Silhouette Score is a measure of how well-separated the clusters are in a K-means clustering model. It evaluates two key factors:
-    
     Cohesion: How close the points in a cluster are to each other.
     Separation: How distinct a cluster is from other clusters. 
-
     A higher silhouette score (close to +1) indicates well-separated and cohesive clusters, while a score close to 0 suggests overlapping clusters, and negative scores indicate poor clustering.
-
     It provides an intuitive and quantitative way to assess clustering quality without needing ground truth labels.
     It helps select the optimal number of clusters by comparing scores across different values of K.
     
